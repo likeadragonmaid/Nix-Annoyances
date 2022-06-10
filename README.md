@@ -39,6 +39,10 @@ $ `sudo sysctl -p && sudo sysctl vm.swappiness=10`
 
 $ `balooctl disable`
 
+### Fix KDE Application Launcher not responding to Super/ Meta Key
+
+Right Click on Application Launcher Icon > Configure Application Launcher > Keyboard Shortcuts > Set shortcut as `ALT + F1` > Apply
+
 ### Enable backspace key in Nautilus
 
 `sudo dnf install nautilus-python -y`

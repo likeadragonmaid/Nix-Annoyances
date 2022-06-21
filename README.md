@@ -45,9 +45,9 @@ Right Click on Application Launcher Icon > Configure Application Launcher > Keyb
 
 ### Enable backspace key in Nautilus
 
-`sudo dnf install nautilus-python -y`
+$ `sudo dnf install nautilus-python -y`
 
-`sudo apt install python-nautilus -y`
+$ `sudo apt install python-nautilus -y`
 
 ```
 mkdir -p ~/.local/share/nautilus-python/extensions && cd ~/.local/share/nautilus-python/extensions && wget https://raw.githubusercontent.com/riclc/nautilus_backspace/master/BackspaceBack.py && killall nautilus
@@ -197,7 +197,7 @@ $ `sudo zypper in indic-fonts`
 
 https://en.opensuse.org/SDB:Installing_codecs_from_Packman_repositories
 
-### Relabel files for SELinux if Desktop Environment does not let you login (This also used to happen if you switch to Fedora from OpenSUSE and reuse the same `/home` partition)
+### Relabel files for SELinux if Desktop Environment does not let you login (This also happens when you reuse /home when install Fedora KDE Spin)
 
 Add `autorelabel` option to your cmdline by temporarily editing grub entry. You can do that when you are on grub screen. Just highlight a kernel and press E button and add it to cmdline and save it by pressing `Ctrl + X`.
 

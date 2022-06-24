@@ -70,7 +70,6 @@ $ `sudo nano /etc/modprobe.d/50-rtl8723be.conf`
 Add the following lines
 
 ```
-options rtl8723be ant_sel=1
 options rtl8723be ips=0 fwlps=0
 ```
 
@@ -80,7 +79,8 @@ $ `sudo nano /etc/NetworkManager/conf.d/wifi-powersave-off.conf`
 
 Add the following lines
 
-```[connection]
+```# File to be place under /etc/NetworkManager/conf.d
+[connection]
 # Values are 0 (use default), 1 (ignore/don't touch), 2 (disable) or 3 (enable).
 wifi.powersave = 2
 ```
@@ -90,12 +90,13 @@ $ `sudo nano /etc/NetworkManager/conf.d/wifi-powersave-on.conf`
 Add the following lines
 
 ```
+# File to be place under /etc/NetworkManager/conf.d
 [connection]
 # Values are 0 (use default), 1 (ignore/don't touch), 2 (disable) or 3 (enable).
 wifi.powersave = 3
 ```
 
-Finally reboot. If your wifi signal reduces or fails to connect, replace `ant_sel=1` with `ant_sel=2`.
+Finally reboot.
 
 ### Enable optional features in Gnome Boxes
 

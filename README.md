@@ -39,6 +39,14 @@ $ `sudo sysctl -p && sudo sysctl vm.swappiness=10`
 
 $ `balooctl disable`
 
+### Dolphin giving pain with MTP i.e. Giving error when trying to access files on MTP device (workaround, it will still give pain!)
+
+Unplug device, close all all tabs of dolphin and then dolphin itself then run the following command
+
+$ `sudo udevadm trigger --action=change`
+
+Launch dolphin again.
+
 ### Fix KDE Application Launcher not responding to Super/ Meta Key
 
 Right Click on Application Launcher Icon > Configure Application Launcher > Keyboard Shortcuts > Set shortcut as `ALT + F1` > Apply

@@ -140,9 +140,29 @@ sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-rele
 sudo dnf install @kde-desktop --exclude=akregator --exclude=kwrite --exclude=kruler --exclude=kmouth --exclude=kmousetool --exclude=kmag --exclude=kde-partitionmanager --exclude=kcolorchooser --exclude=kcharselect --exclude=kfind -y
 ```
 
-### Remove garbage packages from Fedora KDE spin
+### Remove garbage packages from Fedora KDE spin/ @kde-desktop
 
 $ `sudo dnf remove akregator kwrite kruler kmouth kmousetool kmag kde-partitionmanager kcolorchooser ekcharselect kfind -y`
+
+### Packages required for configuring Japanese input on KDE
+
+$ `sudo dnf install kcm-fcitx5 fcitx-qt5 fcitx5-qt-libfcitx5qt5widgets fcitx5-mozc fcitx5-autostart fcitx5 fcitx-libs fcitx5-qt-module fcitx5-qt-libfcitx5qtdbus fcitx5-qt fcitx5-gtk fcitx5-gtk4 fcitx5-gtk3 fcitx5-gtk2 fcitx5-data`
+
+After that add input method with Fcitx called Mozc. You might also want to enable global shortcut to switch input methods. I recommend using Super Key + Space key.
+
+### Switch Fedora Edition from vanilla (Gnome) to KDE
+
+$ `sudo dnf swap fedora-release-identity-workstation fedora-release-identity-kde`
+
+### Switch Fedora Edition from KDE to vanilla (Gnome)
+
+$ `sudo dnf swap fedora-release-identity-kde fedora-release-identity-workstation`
+
+### List last installed packages
+
+$ ` rpm -qa --last | head --lines=5`
+
+Change `5` with the number of packages you want to list
 
 ## OpenSUSE
 

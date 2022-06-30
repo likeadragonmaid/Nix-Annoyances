@@ -106,6 +106,12 @@ wifi.powersave = 3
 
 Finally reboot.
 
+### Wi-Fi and Bluetooth not working simultaneously
+
+$ `sudo tee /etc/modprobe.d/iwlwifi-opt.conf <<< "options iwlwifi bt_coex_active=N"`
+
+Finally reboot.
+
 ### Enable optional features in Gnome Boxes
 
 While in guest OS, run

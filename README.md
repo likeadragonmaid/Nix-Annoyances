@@ -156,6 +156,14 @@ $ `sudo dnf install kcm-fcitx5 fcitx-qt5 fcitx5-qt-libfcitx5qt5widgets fcitx5-mo
 
 After that add input method with Fcitx called Mozc. You might also want to enable global shortcut to switch input methods. I recommend using Super Key + Space key.
 
+### Switch to SDDM
+
+$ `sudo systemctl enable sddm.service -f`
+
+### Switch to GDM
+
+$ `sudo systemctl enable gdm.service -f`
+
 ### Switch Fedora Edition from vanilla (Gnome) to KDE
 
 $ `sudo dnf swap fedora-release-identity-workstation fedora-release-identity-kde`

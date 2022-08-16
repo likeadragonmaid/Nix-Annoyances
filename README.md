@@ -134,6 +134,14 @@ curl https://download.videolan.org/pub/debian/videolan-apt.asc | sudo apt-key ad
 
 ## Fedora
 
+### Increase DNF download speed
+
+$ `sudo nano /etc/dnf/dnf.conf`
+
+Add the following line in the of the file
+
+`max_parallel_downloads=10`
+
 ### Installing plugins for playing movies and music
 
 ```

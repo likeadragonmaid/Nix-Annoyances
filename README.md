@@ -180,6 +180,10 @@ $ `sudo dnf swap fedora-release-identity-workstation fedora-release-identity-kde
 
 $ `sudo dnf swap fedora-release-identity-kde fedora-release-identity-workstation`
 
+### Disable ksshaskpass
+
+$ `unset SSH_ASKPASS`
+
 ### List last installed packages
 
 $ ` rpm -qa --last | head --lines=5`

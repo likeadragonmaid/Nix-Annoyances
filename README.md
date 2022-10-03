@@ -134,6 +134,10 @@ curl https://download.videolan.org/pub/debian/videolan-apt.asc | sudo apt-key ad
 
 ## Fedora
 
+### Enabling back Mesa's H.264 / H.265 / VC1 VA-API
+
+$ `sudo dnf copr enable xxmitsu/mesa-git -y && sudo dnf upgrade --refresh`
+
 ### Increase DNF download speed
 
 $ `sudo nano /etc/dnf/dnf.conf`

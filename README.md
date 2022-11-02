@@ -194,6 +194,12 @@ $ ` rpm -qa --last | head --lines=5`
 
 Change `5` with the number of packages you want to list
 
+### Try out plasma mobile
+
+$ `sudo dnf distro-sync -y && sudo dnf install alligator angelfish audiotube calindori kalk kasts kclock keysmith khealthcertificate koko kongress kpeoplevcard krecorder ktrip kweather kweathercore neochat plasma-dialer plasma-mobile plasma-mobile-sounds plasma-nano plasma-phonebook plasma-settings plasmatube qmlkonsole spacebar tokodon vakzination`
+
+`Tip: You can leave out most packages that you don't need.`
+
 ## OpenSUSE
 
 ### Low resolution in OpenSUSE GUI installer

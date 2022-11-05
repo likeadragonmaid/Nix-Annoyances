@@ -152,6 +152,10 @@ Add the following line in the of the file
 sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm -y && sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y && sudo dnf install gstreamer1-plugins-{bad-\*,good-\*,base} gstreamer1-plugin-openh264 gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel vlc lame\* --exclude=lame-devel && sudo dnf group upgrade --with-optional Multimedia -y
 ```
 
+### Install Gnome
+
+$ `sudo dnf install @workstation-product-environment -y`
+
 ### Install KDE minus the garbage packages
 
 ```

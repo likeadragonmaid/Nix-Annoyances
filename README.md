@@ -152,6 +152,10 @@ Add the following line in the of the file
 sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm -y && sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y && sudo dnf install gstreamer1-plugins-{bad-\*,good-\*,base} gstreamer1-plugin-openh264 gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel vlc lame\* --exclude=lame-devel && sudo dnf group upgrade --with-optional Multimedia -y
 ```
 
+### Automatically decrypt LUKS ecrypted disk using TPM2
+
+https://fedoramagazine.org/automatically-decrypt-your-disk-using-tpm2/
+
 ### Install Gnome
 
 $ `sudo dnf install @workstation-product-environment -y`

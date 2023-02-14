@@ -146,6 +146,10 @@ Add the following line in the of the file
 
 `max_parallel_downloads=10`
 
+### Make snapd work
+
+$ `sudo dnf install snapd && sudo ln -s /var/lib/snapd/snap /snap`
+
 ### Installing plugins for playing movies and music
 
 ```

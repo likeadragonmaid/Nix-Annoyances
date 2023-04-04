@@ -132,6 +132,10 @@ $ `sudo apt install zram-config`
 curl https://download.videolan.org/pub/debian/videolan-apt.asc | sudo apt-key add - && echo "deb https://download.videolan.org/pub/debian/stable ./" | sudo tee /etc/apt/sources.list.d/libdvdcss.list && sudo add-apt-repository multiverse && sudo apt update && sudo apt install ubuntu-restricted-extras curl vlc vlc-data browser-plugin-vlc mplayer2
 ```
 
+### DNS over TLS
+
+https://www.techrepublic.com/article/how-to-use-dns-over-tls-on-ubuntu-linux/
+
 ## Fedora
 
 ### Enabling back Mesa's H.264 / H.265 / VC1 VA-API

@@ -35,6 +35,10 @@ Add the following line to the end of file
 
 $ `sudo sysctl -p && sudo sysctl vm.swappiness=10`
 
+### Switch off caching for USB when trying to write data to it
+
+https://askubuntu.com/questions/5051/how-to-switch-off-caching-for-usb-device-when-writing-to-it
+
 ### Speed up and reduce CPU usage in KDE Plasma 5 on systems with HDD
 
 $ `balooctl disable`

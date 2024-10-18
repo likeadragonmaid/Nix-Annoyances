@@ -65,15 +65,8 @@ $ `sudo apt install python-nautilus -y`
 mkdir -p ~/.local/share/nautilus-python/extensions && cd ~/.local/share/nautilus-python/extensions && wget https://raw.githubusercontent.com/riclc/nautilus_backspace/master/BackspaceBack.py && killall nautilus
 ```
 
-### Speed up SSD
-
-$ `sudo apt install hdparm`
-
-$ `sudo dnf install hdparm`
-
-$ `sudo hdparm -B254 /dev/sda`
-
 ### RTL8723BE PCIe Wireless Network Adapter stops working or becomes unusable
+I recommend to replace this M.2 based WiFi card with either Intel or Mediatek based cards, preferally Wifi 6E or up
 
 This happens because of powersaving mode of `NetworkManager`
 
@@ -163,6 +156,10 @@ $ `sudo dnf install snapd && sudo ln -s /var/lib/snapd/snap /snap`
 ```
 sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm -y && sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y && sudo dnf install gstreamer1-plugins-{bad-\*,good-\*,base} gstreamer1-plugin-openh264 gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel vlc lame\* --exclude=lame-devel && sudo dnf group upgrade --with-optional Multimedia --allowerasing -y
 ```
+
+### Hardware acceration with Intel GPUs
+
+https://discussion.fedoraproject.org/t/intel-graphics-best-practices-and-settings-for-hardware-acceleration/69944
 
 ### Automatically decrypt LUKS ecrypted disk using TPM2
 

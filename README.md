@@ -172,12 +172,12 @@ $ `sudo dnf install @workstation-product-environment -y`
 ### Install KDE minus the garbage packages
 
 ```
-sudo dnf install @kde-desktop --exclude=akregator --exclude=kwrite --exclude=kruler --exclude=kmouth --exclude=kmousetool --exclude=kmag --exclude=kde-partitionmanager --exclude=kcolorchooser --exclude=kcharselect --exclude=kfind -y
+sudo dnf install @kde-desktop --exclude=akregator --exclude=kwrite --exclude=kruler --exclude=kmouth --exclude=kmousetool --exclude=kmag --exclude=kde-partitionmanager --exclude=kcolorchooser --exclude=kcharselect --exclude=kfind --exclude=kmahjong --exclude=kolorpaint --exclude=kmines --exclude=kpat --exclude=neochat -y
 ```
 
 ### Remove garbage packages from Fedora KDE spin/ @kde-desktop
 
-$ `sudo dnf remove akregator kwrite kruler kmouth kmousetool kmag kde-partitionmanager kcolorchooser ekcharselect kfind -y`
+$ `sudo dnf remove akregator kwrite kruler kmouth kmousetool kmag kde-partitionmanager kcolorchooser ekcharselect kfind kmahjongg kolorpaint kmines kpat neochat -y`
 
 ### Packages required for configuring Japanese input on KDE
 

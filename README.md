@@ -284,3 +284,15 @@ https://en.opensuse.org/SDB:Installing_codecs_from_Packman_repositories
 Add `autorelabel` option to your cmdline by temporarily editing grub entry. You can do that when you are on grub screen. Just highlight a kernel and press E button and add it to cmdline and save it by pressing `Ctrl + X`.
 
 Usually OpenSUSE, Fedora and RHEL are known to do it automatically.
+
+
+## Steam
+
+Steam native package crashes especially on Fedora KDE having integrated and dedicted AMD GPUs:
+
+1. Make sure in Kickoff/Applications launcher, steam -> edit application -> Advanced -> Uncheck `Run using dedicatated graphics card`
+2. In Genaral tab, add PCI ID of your dedicated GPU using `lspci -vnn | grep -i vga` and writing the PCI ID before `/usr/bin/stean %U` in `Command-line arguments:` For ex. `DRI_PRIME=pci-0000_03_00_0 /usr/bin/steam %U`
+
+Steam native package cannot select your games partition or path:
+
+Make sure you take ownership of that path or partition recursively.

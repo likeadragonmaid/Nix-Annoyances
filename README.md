@@ -296,3 +296,15 @@ Steam native package crashes especially on Fedora KDE having integrated and dedi
 Steam native package cannot select your games partition or path:
 
 Make sure you take ownership of that path or partition recursively.
+
+## Unable to access network in VM
+
+`nano /etc/libvirt/network.conf`
+
+And add:
+
+`firewall_backend = "iptables"`
+
+Then restart libvirt service:
+
+`sudo systemctl restart libvirtd`

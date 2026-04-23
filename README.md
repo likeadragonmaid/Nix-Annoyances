@@ -308,3 +308,9 @@ And add:
 Then restart libvirt service:
 
 `sudo systemctl restart libvirtd`
+
+## KDE
+
+Ignore KDE theming for a particular program temporarily
+
+`QT_STYLE_OVERRIDE=Fusion DESKTOP_SESSION=gnome XDG_CURRENT_DESKTOP=GNOME program-name`
